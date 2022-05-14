@@ -4,12 +4,69 @@
 
 /*  File Content:
     General Style
+    Add Task
 */
 
 /* ====== General Style ====== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap');
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 97vh;
+    font-family: 'Roboto Flex' , sans-serif;
+    font-size: 16px;
+    color: #000000;
     background: linear-gradient(to right top, #9a6fc9 , #fec0c1) fixed;
+}
+
+/* ====== Add Task ====== */
+.box {
+    display: grid;
+    place-items: center;
+    width: 300px;
+    background-color: #f8f4ef;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.2) ;
+}
+
+.add-task h4{
+    font-size: 20px;
+    margin: 2rem 0 2rem 2rem;
+}
+
+.input-task {
+    margin: 2rem 1.5rem;
+    width: 240px;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid #777777;
+    outline: none ;
+    padding-left: 5px;
+}
+
+.input-task:focus {
+    outline: 5px solid #777777;
+}
+
+.add-btn-task {
+    width: 200px;
+    height: 30px;
+    border: none;
+    color: #ffffff;
+    background-color: #19a719;
+    cursor: pointer;
+    margin: 0 3rem 2rem;
+    border-radius: 4px;
+    outline: none;
+}
+
+.add-btn-task:hover {
+    background-color: #47da47;
+    border: 1px solid #19a719;
+}
+
+.add-btn-task:focus {
+    outline: 6px solid #47da47;
 }
