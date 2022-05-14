@@ -1,0 +1,15 @@
+/*  Template Name : To Do List
+    Author Name : Maedeh Alizadeh
+*/
+
+/*  File Content:
+    General Style
+*/
+
+/* ====== General Style ====== */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right top, #9a6fc9 , #fec0c1) fixed;
+}
