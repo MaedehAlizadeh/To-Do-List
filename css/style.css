@@ -76,3 +76,47 @@ body {
 }
 
 
+
+/* ====== Task List ====== */
+.task-list-box{
+    display: none;
+    grid-template-columns: repeat(2, 1fr);
+    width: 300px;
+    height: 300px;
+    background-color: #f8f4ef;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.2) ;
+}
+
+.task-list-box.show {
+    display: grid;
+}
+
+.task-list-box button{
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.task-list-box img{
+    width: 100%;
+    height: 30px;
+}
+.all-task {
+    grid-column: 1 / 2;
+}
+
+.show-all-btn {
+    border-right: 1px solid #777777 !important;
+    border-bottom: 1px solid #777777 !important;
+}
+
+.completed-task {
+    grid-column: 2 / 3;
+}
+
+.show-complete-btn {
+    border-left: 1px solid #777777 !important;
+    border-bottom: 1px solid #777777 !important;
+}

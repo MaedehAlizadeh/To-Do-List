@@ -4,6 +4,8 @@
 // Add Task to localStorage and go to tasklist
 const addTaskBtn = document.querySelector('.add-task-btn');
 const inputTask = document.querySelector('.input-task');
+const addTaskBox = document.querySelector('.add-task-box');
+const taskListBox = document.querySelector('.task-list-box')
 
 addTaskBtn.addEventListener('click' , addTask);
 
@@ -12,9 +14,11 @@ document.addEventListener('pressdown' , addTask);// for keyboard
 
 function addTask(event){
     event.preventDefault();
+
     const taskVal = inputTask.value;
     saveLocaltask(taskVal);
-    inputTask.value = '';
+    addTaskBox.classList.toggle('hidden');
+    taskListBox.classList.toggle('show');
 }
 
 
