@@ -22,13 +22,17 @@ body {
 }
 
 /* ====== Add Task ====== */
-.box {
+.add-task-box {
     display: grid;
     place-items: center;
     width: 300px;
     background-color: #f8f4ef;
     border-radius: 20px;
     box-shadow: 0 5px 15px 0 rgba(0,0,0,0.2) ;
+}
+
+.add-task-box.hidden {
+    display: none;
 }
 
 .add-task h4{
@@ -50,7 +54,7 @@ body {
     outline: 5px solid #777777;
 }
 
-.add-btn-task {
+.add-task-btn {
     width: 200px;
     height: 30px;
     border: none;
@@ -62,11 +66,13 @@ body {
     outline: none;
 }
 
-.add-btn-task:hover {
+.add-task-btn:hover {
     background-color: #47da47;
     border: 1px solid #19a719;
 }
 
-.add-btn-task:focus {
+.add-task-btn:focus {
     outline: 6px solid #47da47;
 }
+
+
